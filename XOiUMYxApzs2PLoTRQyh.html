@@ -16,7 +16,7 @@
     <script src="/js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body onload = "test()">
     <h1 class="text-center">Projects</h1>
     <p class="text-center">Here is the full list of games on this site, play some of your favorites or find a new one!</p>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5756835229788588" crossorigin="anonymous"></script>
@@ -28,7 +28,11 @@
           <h1 class="game-title">1</h1>
         </div>
       </a>
-
+      <script>
+        function test() {
+          window.history.pushState("about:blank", document.querySelector("title").innerHTML, "/78767");
+        }
+      </script>
       <a href="projects/1v1space/index.html" class="game-link container">
         <div class="game-tile">
           <img class="game-icon" src="projects/1v1space/splash.png" alt="icon" />
